@@ -71,3 +71,65 @@ select:focus {
     font-weight: normal;
     cursor: pointer;
 }
+
+.kain-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.kain {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fafafa;
+}
+
+.kain img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.kain input {
+    margin-bottom: 6px;
+}
+
+.kain:hover {
+    border-color: #6a85b6;
+    background: #f0f4ff;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6a85b6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #556fa5;
+}
+
+@media (max-width: 480px) {
+    .kain-group {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

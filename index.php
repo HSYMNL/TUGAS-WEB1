@@ -42,19 +42,19 @@
         <div class="kain-group">
             <label class="kain">
                 <input type="radio" name="kain" value="Katun" required>
-                <img src="jejeran-kain-via-maxpixel.jpg">
+                <img src="images/kain-katun.jpeg">
                 Katun
             </label>
 
             <label class="kain">
                 <input type="radio" name="kain" value="Satin">
-                <img src="images.jpg">
+                <img src="images/kain-satin.jpeg">
                 Satin
             </label>
 
             <label class="kain">
                 <input type="radio" name="kain" value="Sutra">
-                <img src="unnamed.jpg">
+                <img src="images/kain-sutra.jpeg">
                 Sutra
             </label>
         </div>

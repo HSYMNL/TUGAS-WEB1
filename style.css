@@ -1,164 +1,73 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: #eef1f5;
-    padding: 40px 20px;
-}
-
-/* WRAPPER */
-.wrapper {
-    max-width: 950px;
-    margin: auto;
-}
-
-/* BANNER */
-.banner {
-    width: 100%;
-    height: 260px;
-    margin-bottom: 30px;
-    overflow: hidden;
-    border-radius: 14px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-/* TITLE */
-.title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 6px;
-}
-
-.subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 35px;
-}
-
-/* FORM CARD */
-.form-card {
-    background: #ffffff;
-    padding: 35px;
-    border-radius: 14px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
-}
-
-/* FORM ROW */
-.form-row {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a85b6, #bac8e0);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
-.form-row label {
+.container {
+    width: 100%;
+    max-width: 520px;
+    background: #ffffff;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.desc {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
     font-weight: 600;
+    color: #333;
 }
 
-/* INPUT */
 input[type="text"],
 input[type="number"],
 select {
+    width: 100%;
     padding: 10px 12px;
+    margin-bottom: 18px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 14px;
+    transition: 0.3s;
 }
 
 input:focus,
 select:focus {
+    border-color: #6a85b6;
     outline: none;
-    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(106,133,182,0.2);
 }
 
-/* RADIO */
 .radio-group {
     display: flex;
     gap: 20px;
+    margin-bottom: 18px;
 }
 
-/* SECTION */
-.section {
-    margin: 35px 0 15px;
-    font-size: 20px;
-}
-
-/* FABRIC */
-/* CONTAINER JENIS KAIN */
-.fabric-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 15px;
-}
-
-/* CARD KAIN */
-.fabric-card {
-    background: #fafafa;
-    border-radius: 12px;
-    overflow: hidden;
-    text-align: center;
-}
-
-/* GAMBAR KAIN (INI KUNCI UTAMA) */
-.fabric-card img {
-    width: 100%;
-    height: 150px;        /* PAKSA TINGGI SAMA */
-    object-fit: cover;   /* POTONG BIAR RAPI */
-    display: block;
-}
-
-.fabric-card span {
-    display: block;
-    padding: 10px 0;
-    font-weight: 600;
-}
-
-.fabric-card input {
-    margin-bottom: 10px;
-}
-
-.fabric-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-/* BUTTON */
-.btn-submit {
-    width: 100%;
-    margin-top: 35px;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 12px;
+.radio-group label {
+    font-weight: normal;
     cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-submit:hover {
-    background: #1e40af;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .banner {
-        height: 180px;
-    }
 }
